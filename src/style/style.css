@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-regular: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #000000;
+    --clr-accent: rgb(29, 155, 240);
+    --clr-border: rgba(211, 211, 211, 0.3);
+
+    --fs-h1: 3rem;
+    --fs-h2: 1.72rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+}
+
+
+/* ==============
+      General 
+ ================ */ 
+ body {
+    background-color: var(--clr-dark);
+    color: #fff;
+ }
+
+ /* ==============
+    typograph 
+ ================ */ 
+ h1,
+ h2,
+ h3,
+ h4,
+ p {
+    margin: 0;
+ }
+
+ /* ===============
+      container
+ =============== */
+
+.container {
+    display: flex;
+}
+
+/* ===============
+      sidebar
+ =============== */
+
+.sidebar {
+    font-size: var(--fs-h2);
+    width: 78px;
+    height: 100vh;
+    display: flex;
+    border-right: .1px solid var(--clr-border);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* width: 88px; */
+    /* width: 68px; */
+}
+
+.sidebar__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    padding: 15px 10px;
+}
+.sidebar__icons-link {
+    color: var(--clr-light);
+}
+
+.sidebar__profile {
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar__profile>img {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+/* ===============
+      main Content
+ =============== */
+ 
+ .main__content {
+    width: 100%;
+    max-width: 800px;
+ }
+ /* ===============
+       Header
+  =============== */
+
+.header {
+    width: 100%;
+    border-bottom: .1px solid var(--clr-border);
+}
+
+.header__top-Layer {
+    width: 100%;
+    height: 53px;
+    padding: 15px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__center-Layer {
+    padding: 5px 15px;
+    display: flex;
+    gap: 20px;
+    align-items:flex-start ;
+
+}
+
+.header__center-Layer__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header__center-Layer__form{
+    width: 80%;
+}
+.header__center-Layer__form--text:active,
+.header__center-Layer__form--text {
+    display: block;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border: none;
+    outline:none;
+    font-size: var(--fs-h3);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.header__center-Layer__form--icons {
+    color: var(--clr-accent);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.header__center-Layer__form--btn {
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    width: 75px;
+    height: 35px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    border-radius: 17.5px;
+    border: none;
+    margin-left: auto;
+}
+
+ /* ===============
+       Tweet
+  =============== */
+
+.tweet {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: .1px solid var(--clr-border);
+}
+
+.tweet__profile--img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.tweet__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.tweet__profile--name {
+    margin-right: 5px;
+}
+
+.tweet__profile--userName,
+.tweet__profile--time {
+    margin-right: 5px;
+    color: lightgray;
+    font-size: 12px;
+}
+
+.tweet__info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+    color: lightgray;
+    font-size: var(--fs-h3);
+}
+.tweet__info-icon:hover {
+    color: var(--clr-light);
+}
+.tweet__content {
+    margin-bottom: 20px;
+}
+
+.tweet__intractive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-body);
+    color: lightgray;
+}
