@@ -52,8 +52,8 @@ function Provider(props){
 
 
     useEffect(() => {
+        // eslint-disable-next-line
         pureData.map(el => el.meanings.map(e => e.definitions.map(each => {
-            // eslint-disable-next-line
             setData(el => [...el, {text: each.definition}])
         })))
         setTimeout(()=> {
@@ -61,6 +61,7 @@ function Provider(props){
                 setDataWithPicture(el => [...el, { photo:profilePicture[i].cover_photo.urls.regular, content: data[i]}])
             }
         }, 3000)
+        // eslint-disable-next-line
     },[pureData])
 
 
