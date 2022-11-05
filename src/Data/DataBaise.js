@@ -53,6 +53,7 @@ function Provider(props){
 
     useEffect(() => {
         pureData.map(el => el.meanings.map(e => e.definitions.map(each => {
+            // eslint-disable-next-line
             setData(el => [...el, {text: each.definition}])
         })))
         setTimeout(()=> {
