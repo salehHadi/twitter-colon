@@ -9,7 +9,7 @@ import { Provider } from './Data/DataBaise';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider>
-    <BrowserRouter>
+    <BrowserRouter basename="/twitter-colon">
       <React.StrictMode>
         <App />
       </React.StrictMode>
